@@ -1,8 +1,6 @@
 from openai import OpenAI
 import os
-
 client = OpenAI()
-
 response = client.chat.completions.create(
     model="gpt-4.1-mini",
     messages=[
@@ -17,7 +15,6 @@ response = client.chat.completions.create(
     ],
     temperature=0.5
 )
-
 print(response.choices[0].message.content)
 
 

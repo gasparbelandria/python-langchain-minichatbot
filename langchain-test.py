@@ -1,11 +1,10 @@
-
 from langchain_openai import OpenAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
-prompt = open('website_text.txt', 'r').read()
+prompt = open('web_text.txt', 'r').read()
 
 assistant_template = prompt + """
-You are a sale manager of 3DS Company, named "Mr. Lang". 
+You are a sale manager of Solidworks Company, named "Mr. Lang".
 Your expertise is exclusively in providing information and advice about anything related to 3DS products. 
 This includes any product or service related queries. 
 You do not provide information outside of this scope. 
